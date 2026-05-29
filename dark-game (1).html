@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DArk</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui">
+  <div id="hud">
+    <div class="hud-block">
+      <div class="hud-label">Health</div>
+      <div id="hp-val" class="hud-val" style="color:#0f0">100</div>
+      <div id="hp-bar-wrap"><div id="hp-bar" style="width:100%"></div></div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">Score</div>
+      <div id="score-val" class="hud-val" style="color:#ff0">0</div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">Rooms</div>
+      <div id="room-val" class="hud-val" style="color:#0ff">0/40</div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">Kills</div>
+      <div id="kills-val" class="hud-val" style="color:#f60">0</div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">Ammo</div>
+      <div id="ammo-pips"></div>
+    </div>
+    <div class="hud-block">
+      <div class="hud-label">Credits</div>
+      <div id="credits-val" class="hud-val" style="color:#0f0">0</div>
+    </div>
+  </div>
+  <div id="powerup-display">
+    <div class="pu-slot" id="pu0"><span id="pu0-icon">—</span><span class="pu-key">Q</span></div>
+    <div class="pu-slot" id="pu1"><span id="pu1-icon">—</span><span class="pu-key">E</span></div>
+    <div class="pu-slot" id="pu2"><span id="pu2-icon">—</span><span class="pu-key">R</span></div>
+  </div>
+  <canvas id="minimap" width="120" height="90"></canvas>
+  <div id="room-announce"></div>
+  <div id="combo-display"></div>
+  <div id="quest-display">
+    <div class="ql">MISSION</div>
+    <div class="qt" id="quest-text">Clear all hostiles</div>
+  </div>
+  <div id="pause-indicator">[ P ] PAUSE &nbsp;|&nbsp; WASD MOVE &nbsp;|&nbsp; MOUSE AIM &amp; SHOOT &nbsp;|&nbsp; Q/E/R POWERUPS &nbsp;|&nbsp; F RELOAD</div>
+</div>
+<div id="overlay">
+  <h1>DArk</h1>
+  <div class="sub">TOP-DOWN COMBAT SYSTEM</div>
+  <div class="stats" id="overlay-stats"></div>
+  <div class="score-big hidden" id="overlay-score"></div>
+  <button class="obutton" id="btn-start">INITIALIZE RUN</button>
+  <button class="obutton hidden" id="btn-restart">RESTART</button>
+</div>
+<script src="game2.js"></script>
+</body>
+</html>
